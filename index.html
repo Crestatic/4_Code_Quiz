@@ -12,24 +12,24 @@
     <body>
 
         <!-- Header for high score and timer -->
-        <header class="">
-            <div>View Highscores</div>
-            <div>Timer</div>
+        <header class="header">
+            <button class="view-score">View Highscores</button>
+            <div>Timer: 75</div>
         </header>
 
         <main>
             <!-- Start of quiz prompt -->
-            <section class="start-quiz">
-                <h1>Coding Quiz Challenge</h1>
+            <section class="start-quiz show">
+                <h1>Coding Quiz Challenge</h1> 
                 <p>
                     Try to answer the following code-related questions within the time limit.  Keep 
                     in mind that incorrect answers will penalize your score/time by 10 seconds
                 </p>
-                <button>Start Quiz</button>
+                <button id="start-button">Start Quiz</button>
             </section>
                 
             <!-- Questionaire section.  Prompt & answers will change after each answer selected -->
-            <section class="questionaire">
+            <section class="questionaire hide">
                 <p class="prompt"></p>
                 <ol class="answer">
                     <li><button class="choice-1"></button></li>
@@ -40,22 +40,22 @@
             </section>
 
             <!-- End of Quiz.  Record final score. -->
-            <section>
+            <section class="end-quiz hide">
                 <h1>All Done!</h1>
                 <p></p>
             </section>
 
             <!-- Highscore section.  Option to go back or clear scores included. -->
-            <section>
+            <section class="score-screen hide">
                 <h1>Highscores</h1>
                 <ol>
 
                 </ol>
-                <button>Go Back</button>
-                <button>Clear Highscores</button>
+                <button class="back-botton">Go Back</button>
+                <button class="clear-score">Clear Highscores</button>
             </section>
         </main>
-        
+
         <script src="assets/js/script.js"></script>
     </body>
 
