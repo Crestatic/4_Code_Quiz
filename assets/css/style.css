@@ -18,6 +18,7 @@ button {
     background-color: blueviolet;
     color: white;
     font-size: 30px;
+    padding: 4px;
 }
 
 section {

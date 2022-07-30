@@ -14,12 +14,12 @@
         <!-- Header for high score and timer -->
         <header class="header">
             <button class="view-score">View Highscores</button>
-            <div>Timer: 75</div>
+            <div> Time left: <span class="timer-count">75</span></div>
         </header>
 
         <main>
             <!-- Start of quiz prompt -->
-            <section class="start-quiz show">
+            <section id="start-quiz">
                 <h1>Coding Quiz Challenge</h1> 
                 <p>
                     Try to answer the following code-related questions within the time limit.  Keep 
@@ -29,7 +29,7 @@
             </section>
                 
             <!-- Questionaire section.  Prompt & answers will change after each answer selected -->
-            <section class="questionaire hide">
+            <section id="questionaire" class="hide">
                 <p class="prompt"></p>
                 <ol class="answer">
                     <li><button class="choice-1"></button></li>
@@ -40,13 +40,13 @@
             </section>
 
             <!-- End of Quiz.  Record final score. -->
-            <section class="end-quiz hide">
+            <section id="end-quiz" class="hide">
                 <h1>All Done!</h1>
                 <p></p>
             </section>
 
             <!-- Highscore section.  Option to go back or clear scores included. -->
-            <section class="score-screen hide">
+            <section id="score-screen" class="hide">
                 <h1>Highscores</h1>
                 <ol>
 
