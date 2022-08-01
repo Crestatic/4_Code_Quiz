@@ -13,5 +13,5 @@ https://crestatic.github.io/4_Code_Quiz/
 
 ## Screenshot
 
-<img src="assets/images/Quiz_start.png">
-<img src="assets/images/Highscore_Screen.png">
+<img src="./assets/images/Quiz_start.png">
+<img src="./assets/images/Highscore_Screen.png">
