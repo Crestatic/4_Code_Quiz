@@ -1,4 +1,4 @@
-// Javascript for 4_Code_Quiz
+
 var startButton = document.getElementById('start-button');
 var startQuizEl = document.getElementById('start-quiz');
 var questionEl = document.getElementById('questionaire');
@@ -8,9 +8,7 @@ var timerEl = document.querySelector('.timer-count');
 var scoreEl = document.querySelector('.score');
 
 
-var timerCount = 75;
-var timeInterval;
-var timer;
+
 // Event listener for the Start Quiz button.
 startButton.addEventListener('click', startQuiz);
 
@@ -23,6 +21,10 @@ function startQuiz() {
 }
 
 // Timer function.  Starts timer and ends quiz when timer is <=0
+var timerCount = 75;
+var timeInterval;
+var timer;
+
 function startTimer() {
     timer = setInterval(function() {
         timerCount--;
@@ -72,14 +74,15 @@ function renderAnswer (event) {
     }
 }
 
+
 // End quiz function.  Hides quiz section and shows user input section.
 function endQuiz() {
     questionEl.classList.add('hide');
     endQuizEl.classList.remove('hide');
     scoreEl.textContent = timerCount;
-    // timerEl.textContent = timerCount;
     clearInterval(timer);
 }
+
 
 // Saving score into local storage
 var nameInput = document.querySelector('#name');
@@ -87,7 +90,6 @@ var submitBtn = document.querySelector('#submit-button');
 var userScoreEl = document.querySelector('.score');
 submitBtn.addEventListener('click', saveScore);
 var highScores = [];
-var scoreString = [];
 var userInfo;
 
 function saveScore(event) {
@@ -106,7 +108,7 @@ function saveScore(event) {
 }
 
 
-// High score screen.
+// Highscore screen.
 var savedNameEl = document.querySelector('#savedName');
 
 function viewHighScore() {
