@@ -31,27 +31,29 @@
             <!-- Questionaire section.  Prompt & answers will change after each answer selected -->
             <section id="questionaire" class="hide">
                 <p class="prompt"></p>
-                <ol class="answer">
-                    <li><button class="choice-1"></button></li>
-                    <li><button class="choice-2"></button></li>
-                    <li><button class="choice-3"></button></li>
-                    <li><button class="choice-4"></button></li>
-                </ol>
+                <div class="answer">
+                    <button class="choice-1"></button>
+                    <button class="choice-2"></button>
+                    <button class="choice-3"></button>
+                    <button class="choice-4"></button>
+                </div>
             </section>
 
             <!-- End of Quiz.  Record final score. -->
             <section id="end-quiz" class="hide">
                 <h1>All Done!</h1>
-                <p></p>
+                <p>Your score is <span class="score"></span></p>
+                <p>Enter Username: <input type="text" id="name"></p>
+                <button id="submit-button">Submit</button>
             </section>
 
             <!-- Highscore section.  Option to go back or clear scores included. -->
             <section id="score-screen" class="hide">
                 <h1>Highscores</h1>
-                <ol>
+                <ul id = "savedName">
 
-                </ol>
-                <button class="back-botton">Go Back</button>
+                </ul>
+                <button class="back-button">Go Back</button>
                 <button class="clear-score">Clear Highscores</button>
             </section>
         </main>
