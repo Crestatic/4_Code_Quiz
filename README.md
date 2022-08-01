@@ -12,6 +12,6 @@ This week's challenge is to make a working multiple choice coding quiz that impl
 https://crestatic.github.io/4_Code_Quiz/
 
 ## Screenshot
-
+![alttext](./assets/images/Quiz_start.PNG)
 <img src="./assets/images/Quiz_start.png">
 <img src="./assets/images/Highscore_Screen.png">
